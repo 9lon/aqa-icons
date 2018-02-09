@@ -1,6 +1,7 @@
 {
   "name": "aqa-icons",
   "main": "aqa-icons.html",
+  "version": "0.0.4",
   "dependencies": {
     "polymer": "Polymer/polymer#^2",
     "iron-icon": "PolymerElements/iron-icon#^2.0.1",
