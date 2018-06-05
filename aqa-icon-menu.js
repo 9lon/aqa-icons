@@ -1,7 +1,9 @@
-<link rel="import" href="../iron-icon/iron-icon.html">
-<link rel="import" href="../iron-iconset-svg/iron-iconset-svg.html">
+import '@polymer/iron-icon/iron-icon.js';
+import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
 
-<iron-iconset-svg name="aqa-menu" size="1024">
+$_documentContainer.innerHTML = `<iron-iconset-svg name="aqa-menu" size="1024">
     <svg>
         <defs>
             <g id="info">
@@ -119,4 +121,6 @@
             </g>
         </defs>
     </svg>
-</iron-iconset-svg>
+</iron-iconset-svg>`;
+
+document.head.appendChild($_documentContainer.content);
